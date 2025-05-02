@@ -1,0 +1,12 @@
+name: Validación de Inventario
+
+on: [push]
+
+jobs:
+check-inventario:
+runs-on: ubuntu-latest
+steps:
+uses: actions/checkout@v4
+name: Mostrar contenido del inventario
+run: cat inventario.csv
+Guarda y cierra el archivo.
